@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TattooCrazy_Home</title>
+    <link rel="stylesheet" href="/home.css">
 </head>
 <body>
     <section id="header">
         <nav class="navbar">
             <div class="logo">TattooCrazy</div>
             <ul class="nav-links">
-
+                <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li>
+                        <a href="/home.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/appointment.html">APPOINTMENT</a>
+                    </li>
+                    <li class="gallery">
+                        <a href="/home.html">GALLERY</a>
+                        <!-- DROP DOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/tattoogallery.html">TATTOO GALLERY</a></li>
+                            <li><a href="/artgallery.html">ART GALLERY</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contactme.html">CONTACT ME</a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </section>
