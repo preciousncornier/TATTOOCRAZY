@@ -1,3 +1,8 @@
+/* Fonts */
+@font-face {
+    font-family: farmhouse;
+    src: url(/fonts/Farmhouse.otf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,19 +13,22 @@ a {
 }
 
 /* NAVBAR STYTLING STARTS */
+/* This will affect the whole header */
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: teal;
-    color: #fff;
+    background-color: rgb(35, 0, 0);
+    color: #ffffff;
+    font-family: farmhouse;
+    letter-spacing: 0.5em;
 }
+/* This affects links on your header */
 .nav-links a {
     color: #fff;
 }
 
-/* LOGO */
+/* LOGO - CHANGE INTO PICTURE */
 .logo {
     font-size: 32px;
 }
@@ -30,6 +38,7 @@ a {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    list-style-type: none;
 }
 .menu li:hover {
     background-color: #4c9e9e;
@@ -45,7 +54,7 @@ a {
     position: relative;
 }
 .dropdown {
-    background-color: rgb(1, 139, 139);
+    background-color: rgb(35, 0, 0);
     padding: 1em 0;
     position: absolute; /* With respect to parent */
     display: none;
