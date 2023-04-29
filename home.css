@@ -59,7 +59,7 @@ a {
     position: absolute; /* With respect to parent */
     display: none;
     border-radius: 8px;
-    top: 35px;
+    top: 30px;
 }
 .dropdown li + li {
     margin-top: 10px;
@@ -74,4 +74,54 @@ a {
 }
 .services:hover .dropdown {
     display: block;
+}
+
+/* Checkbox Hack */
+input[type = checkbox] {
+    display: none;
+} /* HIDES CHECKBOX */
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    user-select: none;
+} /* HIDES HAMBURGER */
+
+/* Responsive Screen for IPAD size */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #1c0000;
+        right: 0;
+        left: 0;
+        top: 10%;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type = checkbox]:checked ~ .menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    /* This is the dropdown for the Gallery */
+    .dropdown {
+        left: 60%;
+        top: 10%;
+        transform: translateX(35%);
+        list-style-type: none;
+    }
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
 }
