@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/home.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
     <section id="header">
-        <nav class="navbar">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu menu-right">
+            <li>
+              <a id="home" href="/html/home.html">HOME</a>
+            </li>
+            <li>
+              <a id="appointment" href="/html/appointment.html">APPOINTMENT</a>
+            </li>
             <div class="logo">TattooCrazy</div>
-            <ul class="nav-links">
-                <input type="checkbox" id="checkbox_toggle"/>
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <div class="menu">
-                    <li>
-                        <a id="home" href="/html/home.html">HOME</a>
-                    </li>
-                    <li>
-                        <a id="appointment" href="/html/appointment.html">APPOINTMENT</a>
-                    </li>
-                    <li class="gallery services">
-                        <a id="gallery" href="/html/home.html">GALLERY</a>
-                        <!-- DROP DOWN MENU -->
-                        <ul class="dropdown">
-                            <li><a id="tattoogallery" href="/html/tattoogallery.html">TATTOO GALLERY</a></li>
-                            <li><a id="artgallery" href="/html/artgallery.html">ART GALLERY</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="contactme" href="/html/contactme.html">CONTACT ME</a>
-                    </li>
-                </div>
-            </ul>
-        </nav>
+            <li class="gallery">
+              <a id="gallery" href="/html/home.html">GALLERY</a>
+              <!-- DROP DOWN MENU -->
+              <ul class="dropdown">
+                <li>
+                  <a id="tattoogallery" href="/html/tattoogallery.html"
+                    >TATTOO GALLERY</a
+                  >
+                </li>
+                <li>
+                  <a id="artgallery" href="/html/artgallery.html"
+                    >ART GALLERY</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a id="contactme" href="/html/contactme.html">CONTACT ME</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
     </section>
-    <section id="top">
-        
-    </section>
+    <section id="top"></section>
     <section id="aboutme">
+      <div class="aboutme">
         <div class="column-2">
-            <h1>About Me</h1>
-            <p>blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</p>
+          <h1>About Me</h1>
+          <p>
+            blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah
+          </p>
         </div>
-        <div class="column-1">
-
-        </div>
+        <div class="column-2 large-profile"></div>
+      </div>
     </section>
-    <section id="footer">
-    </section>
-</body>
+    <section id="footer"></section>
+  </body>
 </html>
